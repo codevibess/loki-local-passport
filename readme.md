@@ -102,30 +102,28 @@ All of this fields can be placed in your signup form (if not it will have value 
 
 ```javascript
 const express = require('express');
-
+ 
 const passport = require('passport');
-const CustomStrategy = require('passport-custom').Strategy;
+const LokiLocal = require('loki-local-passport');
 
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('connect-flash');
+ 
 
-const loki = require('lokijs');
-
-const LokiLocal = require('loki-local-passport');
 
 const app = express();
-
+ 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(session({ secret: 'mistery' }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
-
-
-
+ 
+ 
+ 
 app.post(
     '/login',
     LokiLocal.use('login')
@@ -136,9 +134,9 @@ app.post(
       LokiLocal.use('signup')
     );
   
-
-
-
+ 
+ 
+ 
 app.listen(8080, () => {
   console.log('Started at the port 8080');
 });
