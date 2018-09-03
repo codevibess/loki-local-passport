@@ -3,7 +3,7 @@
 
 is a custom strategy that simplifies  authenticating with Passport using id and password.
 
-This strategy use persistent in-memory JavaScript Datastore - [LokiJS](https://www.npmjs.com/package/lokijs) instead of large NoSQL DB like a MongoDB what give for as amazing *performance*.
+This strategy use persistent in-memory JavaScript Datastore - [LokiJS](https://www.npmjs.com/package/lokijs) instead of large NoSQL DB like a MongoDB what give for us amazing *performance*.
 
 # Intro
 
@@ -102,7 +102,7 @@ All of this fields can be placed in your signup form (if not it will have value 
 
 ```javascript
 const express = require('express');
- 
+
 const passport = require('passport');
 const LokiLocal = require('loki-local-passport');
 
@@ -123,13 +123,12 @@ app.use(passport.session());
 app.use(flash());
  
  
- 
 app.post(
     '/login',
     LokiLocal.use('login')
   );
   
-  app.post(
+app.post(
       '/signup',
       LokiLocal.use('signup')
     );
