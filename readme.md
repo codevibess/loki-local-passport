@@ -32,12 +32,17 @@ As every passport strategy this one need:
 * [express-session](https://www.npmjs.com/package/express-session)
 * and also [connect-flash](https://www.npmjs.com/package/connect-flash) for send flash messages to user
 
-Install this packadges  require them and use:
+Install this packadges by command :
+```javascript
+npm i express express-session  passport body-parser cookie-parser connect-flash
+  ```
+
+require them and use:
 
 Require all this stuff needed for passport:
 ```javascript
 const passport = require('passport');
-const CustomStrategy = require('passport-custom').Strategy;
+
 
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
