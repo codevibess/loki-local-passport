@@ -8,8 +8,9 @@ This strategy use persistent in-memory JavaScript Datastore - [LokiJS](https://w
 # Intro
 
 
-This module give your posibility quickly handle user auth without painfull dev work like configuration and other stuff. Everything what you need is 3 line.3 line Carl!
-You will say but why i need it? It`s a simple answer : 
+This module give your posibility quickly handle user auth without painfull dev work like configuration and other stuff. Everything what you need is 3 line. 
+Three line Carl!
+You will say but why i need it? It's a simple answer : 
 Imagine that your are at hackaton and make a prototype of your app. Where you will spend more time in auth module or at the logic of your future startup (I hope you do).
 
 Also this module will be helpfull in a
