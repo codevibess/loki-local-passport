@@ -21,7 +21,7 @@ Also this module will be helpfull in a
 # Installation
 
 ```javascript
-npm install passport-local-sequelize
+npm install passport-local-passport
 ```
 
 # Usage
